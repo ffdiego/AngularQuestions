@@ -1,0 +1,26 @@
+<main>
+  <div class="controles">
+    <select id="materia" (change)="selectMateria($event)">
+      <option selected disabled>Materia</option>
+      <option
+        *ngFor="let item of controleSchema?.Materias; index as i"
+        value="{{ i }}"
+      >
+        {{ item }}
+      </option>
+    </select>
+    <select id="nivel" (change)="selectNivel($event)">
+      <option selected disabled>Nivel</option>
+      <option
+        *ngFor="let item of controleSchema?.Niveis; index as i"
+        value="{{ i }}"
+      >
+        {{ item }}
+      </option>
+    </select>
+    <button (click)="getQuestion()" [disabled]="!materia || !nivel">
+      Requestar
+    </button>
+  </div>
+  <p class="error">{{ errorMsg }}</p>
+</main>

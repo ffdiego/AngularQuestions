@@ -1,0 +1,9 @@
+<main>
+  <div class="">
+    <h1>{{ pergunta.enunciado }}</h1>
+  </div>
+  <div class="respostas">
+    <app-alternativa>{{ pergunta.r1 }}</app-alternativa>
+    <button (click)="responder('4')">{{ pergunta.r4 }}</button>
+  </div>
+</main>

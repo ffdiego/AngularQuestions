@@ -1,0 +1,18 @@
+button,
+select {
+  font-size: x-large;
+}
+
+.controles {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  gap: 16px;
+  border: solid 4px green;
+  margin: 16px 0px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

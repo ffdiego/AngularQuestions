@@ -1,0 +1,17 @@
+img {
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

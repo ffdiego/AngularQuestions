@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { IPergunta } from 'src/types/Pergunta';
+import { IPergunta } from 'src/app/models/IPergunta';
 
 @Component({
   selector: 'app-pergunta',

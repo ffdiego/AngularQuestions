@@ -1,0 +1,9 @@
+<main>
+  <app-logo></app-logo>
+  <app-controles></app-controles>
+  <app-pergunta
+    *ngIf="pergunta"
+    [pergunta]="pergunta"
+    (respostaEvent)="respostaEvent($event)"
+  ></app-pergunta>
+</main>
